@@ -8,7 +8,7 @@ google_analytics: UA-133014839-1
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
-tagarray: []
+tagarray: [Github, blog]
 
 collections:
   project:
