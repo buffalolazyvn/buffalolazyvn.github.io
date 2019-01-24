@@ -10,15 +10,18 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #F7F1F1;
+  border-top: 1px solid #f7f1f1;
   border-bottom: 1px solid #fff;
 }
-span.time, span.categories {
-  color: #ADADAD;
+span.time,
+span.categories {
+  color: #adadad;
   margin-bottom: 5px;
   font-size: 11px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #696969;
   font-weight: normal;
 }
@@ -26,15 +29,18 @@ h1 {
   margin-bottom: 10px;
   font-size: 25px;
 }
-h2, h3 {
+h2,
+h3 {
   margin-bottom: 5px;
 }
-a, a:link, a:active {
+a,
+a:link,
+a:active {
   text-decoration: none;
   color: #3fa757;
 }
 a:hover {
-  color: #B3B3B3;
+  color: #b3b3b3;
   text-decoration: underline;
 }
 
@@ -52,30 +58,30 @@ a:hover {
 }
 .sidebar-nav li::before {
   content: "»";
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 /* Content */
 div.content pre {
   background: #333333;
   padding: 10px;
-  color: #FFF;
+  color: #fff;
   overflow-x: auto;
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
   border: none;
 }
 div.content .highlight {
-	background: #333333;
+  background: #333333;
 }
 footer {
-  border-top: 1px solid #F7F1F1;
+  border-top: 1px solid #f7f1f1;
   width: 100%;
   height: 10px;
   margin-top: 10px;
   margin-bottom: 3em;
   padding-top: 10px;
-  color: #C2C2C2;
+  color: #c2c2c2;
   font-size: 11px;
   bottom: 0;
   padding-bottom: 10px;
@@ -89,12 +95,12 @@ div.col-sm-3 {
 }
 div.col-sm-3 strong {
   font-size: 16px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-weight: normal;
 }
 div.col-sm-3 div.profile-about {
   margin-top: 10px;
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 div.col-sm-3 img.profile-avatar {
   border-radius: 150px;
@@ -127,7 +133,7 @@ div.col-sm-3 img.profile-avatar {
 }
 
 /* Social Icons */
-.social{
+.social {
   display: block;
   margin: 10px 0;
 }
@@ -145,7 +151,7 @@ div.col-sm-3 img.profile-avatar {
   color: #969394;
 }
 .social li a:hover {
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 
 .share-page {
@@ -155,7 +161,7 @@ div.col-sm-3 img.profile-avatar {
 }
 .post-content img,
 .content img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 /* Responsive Conditional */
@@ -169,4 +175,132 @@ div.col-sm-3 img.profile-avatar {
   div.col-sm-3 {
     margin-top: 30px;
   }
+}
+
+.midDotDivider {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+  line-height: 20px !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  fill: rgba(0, 0, 0, 0.54) !important;
+}
+
+span.time {
+  font-size: 13px !important;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  letter-spacing: 0 !important;
+  line-height: 20px !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  fill: rgba(0, 0, 0, 0.54) !important;
+}
+
+.midDotDivider:after {
+  content: "\00B7";
+}
+
+.readingTime {
+  letter-spacing: 0 !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.readingTime:after {
+  content: attr(title);
+}
+
+.u-fontSize11 {
+  font-size: 15px !important;
+}
+
+.u-fontSize12 {
+  font-size: 15px !important;
+}
+
+.u-fontSize13 {
+  font-size: 15px !important;
+}
+
+.u-fontSize14 {
+  font-size: 16px !important;
+}
+
+.u-fontSize15 {
+  font-size: 17px !important;
+}
+
+.u-fontSize16 {
+  font-size: 18px !important;
+}
+
+.u-fontSize18 {
+  font-size: 20px !important;
+}
+
+.u-fontSize20 {
+  font-size: 22px !important;
+}
+
+.u-fontSize22 {
+  font-size: 24px !important;
+}
+
+.u-fontSize24 {
+  font-size: 26px !important;
+}
+
+.u-fontSize26 {
+  font-size: 28px !important;
+}
+
+.u-fontSize28 {
+  font-size: 30px !important;
+}
+
+.u-fontSize30 {
+  font-size: 32px !important;
+}
+
+.u-fontSize32 {
+  font-size: 34px !important;
+}
+
+.u-fontSize36 {
+  font-size: 38px !important;
+}
+
+.u-fontSize40 {
+  font-size: 42px !important;
+}
+
+.u-fontSize42 {
+  font-size: 44px !important;
+}
+
+.u-fontSize44 {
+  font-size: 46px !important;
+}
+
+.u-fontSize48 {
+  font-size: 50px !important;
+}
+
+.u-fontSize50 {
+  font-size: 52px !important;
+}
+
+.u-fontSize52 {
+  font-size: 54px !important;
+}
+
+.u-fontSize64 {
+  font-size: 66px !important;
+}
+
+.u-fontSize75 {
+  font-size: 77px !important;
+}
+
+.u-fontSize200 {
+  font-size: 202px !important;
 }

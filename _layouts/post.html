@@ -6,8 +6,12 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
 </header>
 
-<span class="time">{{ page.date | date_to_string }}</span> {% if page.categories
-%}
+<span class="time">{{ page.date | date: "%A, %b %d %Y" }}</span>
+<span class="midDotDivider u-fontSize15"></span> {% if page.timeRead %}<span
+  class="time readingTime"
+  title="{{ page.timeRead }}"
+></span>
+{% endif %} {% if page.categories %}
 <span class="categories">
   &raquo; {% for category in page.categories %}<a
     href="/category/{{ category }}"
