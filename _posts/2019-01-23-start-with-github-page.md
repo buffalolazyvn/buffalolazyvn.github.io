@@ -5,6 +5,7 @@ date: 2019-01-23 16:26:00 +0700
 timeRead: "5 phút"
 tags: blog github website github-page
 categories: [github]
+image: avatar.jpg
 ---
 
 Bắt đầu làm quen với github page

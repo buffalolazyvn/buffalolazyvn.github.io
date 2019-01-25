@@ -4,7 +4,7 @@ title: "Cách đăng và chèn hình cho bài viết định dạng markdown v�
 date: 2019-01-24 18:15:30 +0700
 timeRead: "5 minute read"
 tags: blog github website github-page guide hướng-dẫn
-categories: [github]
+categories: [github, guide]
 ---
 
 Bắt đầu làm quen với github page
