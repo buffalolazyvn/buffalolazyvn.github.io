@@ -364,3 +364,7 @@ span.time {
   background-color:#1C9963;
   color: white;  
 }
+
+li.relatedPost, .PageNavigation a {
+  font-size: 16px;
+}
