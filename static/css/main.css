@@ -368,3 +368,61 @@ span.time {
 li.relatedPost, .PageNavigation a {
   font-size: 16px;
 }
+
+.navbar{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: .5rem 1rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -webkit-justify-content: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.post-nav {
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  background-color: #fafafa !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: .5em 1em;
+}
+
+.nav a.active {
+  border-bottom: 1px solid #2a7ae2;
+}
+
+#home{
+  min-height: calc(100vh - 130px);
+}

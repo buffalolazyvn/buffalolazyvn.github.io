@@ -14,6 +14,8 @@ collections:
   project:
     output: true
     permalink: /project/:path/
+  posts:
+    permalink: /posts/:slug
 
 social:
   - icon: fa-facebook
@@ -45,6 +47,8 @@ paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
 markdown: kramdown
+kramdown:
+  toc_levels: 1..1 # only using h1 thru h4 to generate table of contents in posts
 gems:
   - jekyll-paginate
   - jekyll-gist
