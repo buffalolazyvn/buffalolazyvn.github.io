@@ -380,7 +380,9 @@ li.relatedPost, .PageNavigation a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: .5rem 1rem;
+  padding: .4rem 0;
+  border: none !important;
+  border-radius: none;
 }
 
 .fixed-top {
@@ -420,9 +422,34 @@ li.relatedPost, .PageNavigation a {
 }
 
 .nav a.active {
-  border-bottom: 1px solid #2a7ae2;
+  border-bottom: 1px solid #27ae60;
 }
 
 #home{
   min-height: calc(100vh - 130px);
 }
+
+ /* Style the header: fixed position (always stay at the top) */
+ .progress-container {
+  float:left;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: .4rem;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: .4rem;
+  background: #27ae60;
+  width: 0%;
+} 
