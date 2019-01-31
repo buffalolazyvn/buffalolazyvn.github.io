@@ -20,6 +20,8 @@
 - Projects page & Detail Project page
 - Google analytics
 - HTML Minify _(Compress HTML)_ using [Jekyll Compress HTML](https://github.com/penibelst/jekyll-compress-html)
+- Navigation menu content of a post (fixed on top) *(made by me)*
+- Progress bar scroll of a post *(made by me)*
 
 #### Screenshot
 
@@ -41,7 +43,7 @@ All categories saved inside path of `category/`, you can see the existed categor
 
 **b. Add new Posts**
 
-- All posts bassed on markdown syntax _(please googling)_. allowed extensions is `*.markdown` or `*.md`.
+- All posts based on markdown syntax _(please googling)_. allowed extensions is `*.markdown` or `*.md`.
 - This files can found at the path of `_posts/`.
 - and the name of files are following `<date:%Y-%m-%d>-<slug>.<extension>`, for example:
 
