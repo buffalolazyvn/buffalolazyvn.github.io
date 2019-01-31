@@ -1,16 +1,13 @@
-/*  Super Search
-    Author: Kushagra Gour (http://kushagragour.in)
-    MIT Licensed
+/*  
+    Handler effect for navigation of post
+    Author: Dung Nguyen (https://buffalolazyvn.github.io)
+    © 2019 Dung Nguyen - MIT Licensed
 */
 
 (function () {
     // wrap markdown-toc in navbar div
     $('#markdown-toc').wrapAll('<nav id="post-nav" class="navbar post-nav">');
 
-    // add scrollspy to post navigation
-    // $('body').scrollspy({ target: "#post-nav", offset: 50 });
-
-    // format toc objects with classes for custom scrollspy
     $('#markdown-toc').addClass('nav justify-content-center');
     $('#markdown-toc li').addClass('nav-item');
     $('#markdown-toc a').addClass('nav-link');
@@ -28,7 +25,7 @@
     });
 
     // fix post navbar on scroll past
-    var distanceFromTop = $('#post-nav').offset().top;
+    var distanceFromTop = $('#post-nav') && $('#post-nav').offset() && $('#post-nav').offset().top || 0;
     var menuItemClassSelector = ".nav-link";
     var classActiveMenu = "active";
 
@@ -37,12 +34,14 @@
 
         if (currentScroll >= distanceFromTop) {
             $('#post-nav').addClass('fixed-top');
-            setTimeout(setActiveNavigationMenu, 200);
         } else {
             $('#post-nav').removeClass('fixed-top');
         }
 
-        setProgressBar();
+        setTimeout(function () {
+            setActiveNavigationMenu();
+            setProgressBar();
+        }, 100);
     });
 
     function setProgressBar() {
@@ -54,24 +53,21 @@
     }
 
     function setActiveNavigationMenu() {
-        var scrollPosition = $(document).scrollTop();
         var navigationItems = $(menuItemClassSelector);
         var scrolledItem;
 
-        if (scrollPosition > 0 && navigationItems) {
-            navigationItems.each(function (index, element) {
-                var subMenu = $(element);
+        navigationItems && navigationItems.each(function (index, element) {
+            var subMenu = $(element);
 
-                if (shouldBeHightSubMenuItem(subMenu)) {
-                    scrolledItem = subMenu;
-                }
-            });
-
-            if (scrolledItem) {
-                setActiveForCurrentSubMenu(scrolledItem);
-
-                return;
+            if (shouldBeHightSubMenuItem(subMenu)) {
+                scrolledItem = subMenu;
             }
+        });
+
+        if (scrolledItem) {
+            setActiveForCurrentSubMenu(scrolledItem);
+
+            return;
         }
     }
 
