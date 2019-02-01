@@ -1,47 +1,50 @@
 ---
 layout: post
-title: "Cách đăng và chèn hình cho bài viết định dạng markdown với Gist"
+title: "Làm thế nào đăng hình cho bài viết định dạng markdown với gist"
 date: 2019-01-24 18:15:30 +0700
-timeRead: "5 minute read"
-tags: blog github website github-page guide hướng-dẫn
+timeRead: "3 minute read"
+tags: blog github github-page guide hướng-dẫn
 categories: [github, guide]
 ---
 
-Bắt đầu làm quen với github page
+>Giới hạn lưu trữ miễn phí của GitHub Pages là 1GB.\\
+>Bài viết định dạng markdown chỉ cho phép chèn ảnh chỉ với link trực tiếp.
 
-- [1. Môi trường phát triển](#1-moi-truong-phat-trien)
-  - [1.1. Server website](#server-website)  
-     - [1.2. Hệ điều hành](#he-dieu-hanh)  
-     - [1.3. Trình soạn thảo](#trinh-soan-thao)
-- [2. Các tính năng bổ sung của website](#2-cac-tinh-nang-bo-sung-cua-website)  
-   - [2.1. Một số cú pháp markdown cơ bản](#mot-so-cu-phap-markdown-co-ban)  
-   - [2.2. Mục lục với markdown TOC](#muc-luc-voi-markdown-toc)  
-   - [2.3. Comments dưới mỗi bài viết](#comments-duoi-moi-bai-viet)  
-   - [2.4. Phân tích dữ liệu trang web](#phan-tich-du-lieu-trang-web)
-- [3. Tạo một bài viết mới](#3-tao-mot-bai-viet-moi)
+Example:
+``![I love markDown](https://user-images.githubusercontent.com/11416513/52113202-45f32780-263b-11e9-9190-1ef8cfeb538f.jpg)``
 
-<a name="1-moi-truong-phat-trien"><a/>
+![I love markDown](https://user-images.githubusercontent.com/11416513/52113202-45f32780-263b-11e9-9190-1ef8cfeb538f.jpg 'I love markdown')
 
-## 1. Môi trường phát triển
+Bạn có thể lựa chọn nhiều host khác nhau để lưu trữ nội dung hình ảnh và sử dụng URL được cung cấp.
 
-<a name="server-website"><a/>
+Và những gì tôi chia sẽ dưới đây chỉ là 1 phương án nhanh và tiện để thay thế cho những cách trên (cho tới hiện tại).
 
-### 1.1. Server website
+Bạn sẽ tạo 1 chủ đề/bài viết trên gist[^1] và tận dụng chức năng comment của gist để upload hình ảnh và sử dụng chúng.
 
-![thumbnail](https://user-images.githubusercontent.com/11416513/51652834-962b1380-1fc3-11e9-9d4c-3a66f358c41f.png)
+## Các bước thực hiện
+**1) Bước đầu tiên: Tạo 1 chủ đề gist.**
+   ![create a gist](https://user-images.githubusercontent.com/11416513/52113816-f7df2380-263c-11e9-9df6-8a36f97c8832.jpg 'create a gist')
 
-<script src="https://gist.github.com/buffalolazyvn/73853d388d2ecadc41f1df691cd889f9.js"></script>
+**2) Upload hình ảnh thông qua chức năng comment.**
 
-# Các chức năng hiện có
+     Kéo và thả hình ảnh của bạn vào ô comment.
+     Hình ảnh này sẽ được tự động đưa lên server của github.
 
-    Sitemap and XML Feed
-    Paginations in homepage
-    Posts under category
-    Realtime Search Posts (title & description) under query.
-    Related Posts
-    Highlight pre
-    Next & Previous Post
-    Disqus comment
-    Projects
-    Project page
-    Google analytics
+![uploading image](https://user-images.githubusercontent.com/11416513/52112131-358d7d80-2638-11e9-9c8b-8c1e645180cf.png 'uploading image')
+ 
+**3) Sử dụng kết quả đường dẫn đã được upload thành công**
+
+    Sau khi đã upload thành công thì hệ thống sẽ trả về cho các bạn 1 đường link hoàn chỉnh.
+    Bạn có thể sử dụng đường link này chèn vào bài viết của mình rồi.
+
+![uploaded image](https://user-images.githubusercontent.com/11416513/52112130-358d7d80-2638-11e9-8768-58a7af3dae62.png 'uploaded image')
+
+**4) Sử dụng đường link nhận được trong bài viết của bạn và tận hưởng thành quả nào!**  
+    ![result post with image](https://user-images.githubusercontent.com/11416513/52114482-bf404980-263e-11e9-9738-f585c9a6dd27.jpg)
+
+## Kết luận
+- Trên chỉ là 1 phương án tôi tìm được khi tìm kiếm một nơi để lưu trữ những hình ảnh minh họa cho bài viết của mình. Và với google thần chưởng :) tôi đã tìm được một hướng dẫn cũng ngay trên gist nên mạn phép dịch và trình bày bằng tiếng Việt để tiện cho các bạn tra cứu cũng như tham khảo.
+- Tham khảo nội dung từ: [Adding Images to markdown files in Gist.markdown of Kannankumar](https://gist.github.com/kannankumar/4c613cac6d9db896062a16e1cc57d3e5)
+
+---
+[^1]: gist là 1 dịch vụ của github dùng để tạo và chia sẽ các đoạn code mẫu (https://gist.github.com/)
